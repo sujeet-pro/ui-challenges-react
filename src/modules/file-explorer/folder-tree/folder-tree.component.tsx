@@ -2,7 +2,6 @@ import { memo } from "react";
 import { FolderNode, FileNode } from "../file-explorer.types";
 import { FileSize } from "../file-size/file-size";
 import styles from "./folder-tree.module.css";
-import clsx from "clsx";
 
 export const ICON_MAP = {
   file: "📄",

@@ -1,0 +1,37 @@
+.layout {
+    display: grid;
+    grid-template-areas: 'header header' 'sidenav app';
+    grid-template-rows: auto 1fr;
+    grid-template-columns: minmax(150px, auto) 1fr;
+    min-height: 100vh;
+}
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #666;
+}
+.headerTitle {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.headerNav {
+    display: flex;
+    gap: 0.5rem;
+}
+.sidenav {
+    grid-area: sidenav;
+    border-right: 1px solid #666;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.app {
+    grid-area: app;
+    padding: 0.5rem;
+}

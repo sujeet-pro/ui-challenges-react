@@ -12,19 +12,11 @@ const router = createHashRouter([
     children: [
       {
         index: true,
-        element: (
-          <div>
-            Hello world!: <Link to="/test">Test</Link>
-          </div>
-        ),
+        element: <div>Select a challenge, from side nav</div>,
       },
       {
         path: "/file-explorer",
         element: <FileExplorer />,
-      },
-      {
-        path: "/test",
-        element: <div>Hello test!</div>,
       },
       {
         path: "*",

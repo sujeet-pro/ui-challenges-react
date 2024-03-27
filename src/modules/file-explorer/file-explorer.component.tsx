@@ -36,7 +36,9 @@ export function FileExplorer() {
   return (
     <div>
       <section>
-        <button type="button">Reset</button>
+        <button type="button" onClick={() => setTree(fileExplorerData)}>
+          Reset
+        </button>
       </section>
       {tree.type === "folder" ? (
         <FolderTree
